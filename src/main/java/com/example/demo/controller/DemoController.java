@@ -15,6 +15,8 @@ public class DemoController {
     @GetMapping("/")
     public String demo(Model model) {
         model.addAttribute("mensaje", "¡Bienvenido a la página de inicio!");
+        model.addAttribute("nombre","Jorge");
+
         return "hola";  // Devuelve el nombre de la vista (home.html o home.jsp)
     }
 }
