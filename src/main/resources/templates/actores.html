@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Mostramos nombre de actores-->
+<h1>Actores</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="actor : ${actores}">
+        <td th:text="${actor.first_name}"></td>
+        <td th:text="${actor.last_name}"></td>
+
+    </tr>
+    </tbody>
+</body>
+</html>
