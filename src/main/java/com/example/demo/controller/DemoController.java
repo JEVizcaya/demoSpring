@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
@@ -40,5 +42,14 @@ public class DemoController {
         List<Actor> actores = actorService.findAll();
         model.addAttribute("actores", actores);
         return "actores";
+    }
+    @GetMapping("/actores/nuevo")
+    public String nuevoActor() {
+        return "nuevo_actor";
+    }
+    @PostMapping("/actores/nuevo")
+    public String guardarActor (Actor actor) {
+        actorService.save(actor);
+        return "redirect:/actores";
     }
 }

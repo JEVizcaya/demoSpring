@@ -18,4 +18,8 @@ public class ActorService {
     public List<Actor> findAll() {
         return actorRepository.findAll();
     }
+
+    public void save(Actor actor) {
+        actorRepository.save(actor);
+    }
 }
