@@ -1,0 +1,75 @@
+/* Reseteo básico de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y color de texto para la página */
+body {
+    font-family: Arial, sans-serif;  /* Fuente moderna y legible */
+    background-color: #2c3e50;  /* Fondo negro azulado oscuro */
+    color: #ecf0f1;  /* Texto en blanco claro para buen contraste */
+    padding: 20px;
+}
+
+/* Estilo del título */
+h1 {
+    text-align: center;
+    color: #e67e22;  /* Naranja cálido */
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;  /* La tabla ocupa todo el ancho */
+    border-collapse: collapse;  /* Elimina bordes duplicados */
+    margin: 0 auto;  /* Centra la tabla */
+    background-color: #34495e;  /* Fondo gris oscuro azulado */
+    border: 1px solid #e67e22;  /* Borde naranja */
+}
+
+/* Estilo de las celdas de la tabla */
+th, td {
+    padding: 12px 15px;  /* Relleno para las celdas */
+    text-align: left;  /* Alineación a la izquierda */
+    border-bottom: 1px solid #7f8c8d;  /* Línea sutil gris claro */
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: #e67e22;  /* Fondo naranja */
+    color: white;  /* Texto blanco en los encabezados */
+    font-weight: bold;
+    text-transform: uppercase;  /* Texto en mayúsculas */
+}
+
+/* Estilo para las filas alternadas de la tabla */
+tbody tr:nth-child(even) {
+    background-color: #2c3e50;  /* Fondo negro azulado para filas pares */
+}
+
+/* Estilo para las filas al pasar el mouse (hover) */
+tbody tr:hover {
+    background-color: #e67e22;  /* Fondo naranja cuando se pasa el mouse */
+    color: white;  /* Texto blanco cuando se pasa el mouse */
+}
+
+/* Estilo de las listas de actores */
+ul {
+    list-style-type: none;  /* Elimina los puntos de la lista */
+    padding-left: 0;  /* Elimina el sangrado de la lista */
+}
+
+li {
+    padding: 4px 0;  /* Espaciado entre los actores */
+    color: #ecf0f1;  /* Texto en blanco claro */
+}
+
+/* Diseño responsivo: la tabla se adapta a pantallas más pequeñas */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;  /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+}

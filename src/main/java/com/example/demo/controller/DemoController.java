@@ -1,12 +1,11 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.Actor;
-import com.example.demo.service.ActorService;
+import com.example.demo.service.SakilaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
@@ -14,10 +13,10 @@ import java.util.List;
 @Controller
 public class DemoController {
 
-    private ActorService actorService;
+    private SakilaService actorService;
 
     @Autowired
-    public DemoController(ActorService actorService) {
+    public DemoController(SakilaService actorService) {
         this.actorService = actorService;
     }
 
@@ -50,7 +49,13 @@ public class DemoController {
     @PostMapping("/actores/nuevo")
     public String guardarActor (Actor actor) {
         actorService.save(actor);
+
         return "redirect:/actores";
+    }
+    @GetMapping("/films")
+    public String films(Model model) {
+        model.addAttribute("films", actorService.getAllFilms());
+        return "films";
     }
 
 }

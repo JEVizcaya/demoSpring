@@ -8,7 +8,7 @@
 /* Fondo y color de texto */
 body {
     font-family: Arial, sans-serif;  /* Fuente legible */
-    background-color: #f4f4f9;  /* Fondo claro */
+    background-color: #f9f9f9;  /* Fondo gris muy claro */
     color: #333;  /* Color de texto oscuro */
     padding: 20px;
 }
@@ -16,8 +16,8 @@ body {
 /* Estilo del título */
 h1 {
     text-align: center;
-    color: #4CAF50;  /* Color verde para el título */
-    margin-bottom: 20px;
+    color: #FF8C00;  /* Naranja suave para el título */
+    margin-bottom: 30px;
 }
 
 /* Estilo de la tabla */
@@ -25,40 +25,36 @@ table {
     width: 100%;  /* La tabla ocupa todo el ancho del contenedor */
     border-collapse: collapse;  /* Elimina los bordes duplicados */
     margin: 20px auto;  /* Centra la tabla */
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    background-color: #ffffff;  /* Fondo blanco para la tabla */
+    border: 1px solid #ddd;  /* Borde gris claro alrededor de la tabla */
 }
 
 /* Estilo de las celdas de la tabla (th y td) */
 th, td {
-    padding: 12px 15px;  /* Relleno en celdas */
+    padding: 10px 15px;  /* Relleno en celdas */
     text-align: left;  /* Alineación a la izquierda */
-    border-bottom: 1px solid #ddd;  /* Línea sutil debajo de las celdas */
+    border-bottom: 1px solid #ddd;  /* Línea gris clara debajo de las celdas */
 }
 
 /* Estilo de los encabezados de la tabla */
 th {
-    background-color: #4CAF50;  /* Fondo verde para los encabezados */
-    color: white;  /* Texto blanco */
+    background-color: #f2f2f2;  /* Fondo gris claro para los encabezados */
+    color: #FF8C00;  /* Texto naranja suave para los encabezados */
     font-weight: bold;
 }
 
 /* Estilo de las filas alternadas (para mayor legibilidad) */
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9;  /* Color de fondo gris claro para filas pares */
+    background-color: #fafafa;  /* Color de fondo sutil para filas pares */
 }
 
 /* Efecto hover para filas */
 tbody tr:hover {
-    background-color: #f1f1f1;  /* Color de fondo más claro cuando se pasa el ratón por encima */
+    background-color: #FF8C00;  /* Fondo naranja suave cuando se pasa el ratón por encima */
+    color: white;  /* Texto blanco en el hover */
 }
 
-/* Estilo de los bordes */
+/* Estilo para los bordes */
 table, th, td {
     border: 1px solid #ddd;  /* Borde gris claro */
-}
-
-/* Espaciado entre la tabla y el contenido de la página */
-body {
-    padding: 20px;
 }

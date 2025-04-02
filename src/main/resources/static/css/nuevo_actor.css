@@ -1,0 +1,80 @@
+/* Reseteo básico de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y color de texto */
+body {
+    font-family: Arial, sans-serif;  /* Fuente legible */
+    background-color: #f4f4f9;  /* Fondo claro */
+    color: #333;  /* Color de texto oscuro */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo del título */
+h1 {
+    text-align: center;
+    color: #4CAF50;  /* Color verde para el título */
+    margin-bottom: 30px;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: white;  /* Fondo blanco para el formulario */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    width: 100%;
+    max-width: 400px;  /* Ancho máximo para el formulario */
+}
+
+/* Estilo de las etiquetas (labels) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo de los campos de entrada (input) */
+input[type="text"] {
+    width: 100%;  /* Hacer que el campo ocupe el 100% del ancho del formulario */
+    padding: 12px;
+    margin-bottom: 20px;  /* Espaciado debajo de los campos */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo del botón de envío */
+input[type="submit"] {
+    background-color: #4CAF50;  /* Fondo verde */
+    color: white;  /* Texto blanco */
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+input[type="submit"]:hover {
+    background-color: #45a049;  /* Fondo verde más oscuro cuando se pasa el ratón */
+}
+
+/* Estilos para las validaciones, si las hay */
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}

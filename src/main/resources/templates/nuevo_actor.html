@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" th:href="@{/css/nuevo_actor.css}">
 </head>
 <body>
 <h1>Nuevo Actor</h1>
-<form action="" method="post">
+<form th:action="@{/actores/nuevo}" method="post">
   <label for="nombre">Nombre:</label>
   <input type="text" id="nombre" name="first_name" required>
   <br>
@@ -18,4 +19,3 @@
 </form>
 
 </body>
-</html>

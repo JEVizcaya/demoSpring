@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/films.css}">
+</head>
+<body>
+<h1>Films</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Título</th>
+    <th>Descripción</th>
+    <th>Actores</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="film : ${films}">
+    <td th:text="${film.title}"></td>
+    <td th:text="${film.description}"></td>
+    <td>
+      <ul>
+        <li th:each="actor : ${film.actors}" th:text="${actor.first_name} + ' ' + ${actor.last_name}"></li>
+      </ul>
+    </td>
+
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
